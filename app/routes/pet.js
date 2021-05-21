@@ -5,7 +5,7 @@ const Router = express.Router();
 
 Router.get('/', PetController.index);
 
-Router.post('/');
+Router.post('/', PetController.create);
 
 Router.delete('/:key/:value', PetController.find, PetController.remove);
 
